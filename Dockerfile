@@ -11,5 +11,4 @@ WORKDIR /sample_django_docker
 ADD . /sample_django_docker/
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
-EXPOSE 8000
-CMD exec gunicorn sample_django_docker.wsgi:application — bind 0.0.0.0:8000 — workers 3
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
