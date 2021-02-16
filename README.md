@@ -1,6 +1,6 @@
 ## Sample Django Docker
 
-Featuring:
+### Featuring:
 
 - Docker v20.10.2
 - Python 3.7.3
